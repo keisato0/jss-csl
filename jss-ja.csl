@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" page-range-format="chicago">
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" page-range-format="chicago" default-locale="ja">
 
   <info>
-    <title>社会学評論-en</title>
-    <title-short>JSA-ja</title-short>
-    <summary> 日本語文献用 社会学評論スタイルガイド第3版に準拠した引用・文献スタイル</summary>
+    <title>社会学評論-ja</title>
+    <title-short>JSS-ja</title-short>
+    <summary>[日本語文献用]社会学評論スタイルガイド第3版に準拠した引用・文献スタイル</summary>
     
     <author>
       <name>Kei Sato</name>
@@ -22,11 +22,28 @@
     
     <updated>2020-07-19Z</updated>
   </info>
+  
+    <locale xml:lang="ja">
+    <date form="text">
+        <date-part name="year" suffix="年"/>
+        <date-part name="month" form="numeric" suffix="月"/>
+        <date-part name="day" suffix="日"/>
+    </date>
+    <date form="numeric">
+        <date-part name="year" suffix=""/>
+        <date-part name="month" form="numeric" suffix="月"/>
+        <date-part name="day" suffix="日"/>
+    </date>
+    <terms>
+      <term name="and">・</term>
+    </terms>
+  </locale>
 
+  
     <macro name="editor">
         <names variable="editor">
-        <name and="text" delimiter=", " initialize-with=". "/>
-        <label form="short" prefix=" "/>
+        <name and="text" delimiter="・" initialize-with=". "/>
+        <label form="short" prefix=""/>
         </names>
   </macro>
 
@@ -36,8 +53,8 @@
 
     <macro name="author">
         <names variable="author">
-            <name and="text" delimiter=", " delimiter-precedes-last="never" name-as-sort-order="first" sort-separator=", "  initialize="false" initialize-with=". "/>
-            <label form="short" prefix=" "/>
+            <name and="text" delimiter="・" delimiter-precedes-last="never" name-as-sort-order="first" sort-separator="，"  initialize="false" initialize-with=". "/>
+            <label form="short" prefix=""/>
         <substitute>
             <names variable="editor"/>
             <names variable="translator"/>
@@ -53,7 +70,7 @@
   
   <macro name="author-short">
     <names variable="author">
-      <name form="short" and="text" delimiter=", " initialize-with=". "/>
+      <name form="short" and="text" delimiter="，" initialize-with=". "/>
       <substitute>
         <names variable="editor"/>
         <names variable="translator"/>
@@ -87,7 +104,7 @@
         <text variable="title" text-case="title"/>
       </if>
       <else-if type="bill book graphic legal_case legislation motion_picture report song" match="any">
-        <text variable="title" font-style="italic" text-case="title"/>
+        <text variable="title" text-case="title"/>
       </else-if>
       <else>
         <text variable="title" quotes="true" text-case="title"/>
@@ -213,10 +230,10 @@
       <key variable="title"/>
     </sort>
     
-    <layout suffix=".">
+    <layout suffix="">
       <group delimiter="">
-        <text macro="author" suffix=", "/>
-        <text macro="year-date" suffix=", "/>
+        <text macro="author" suffix="，"/>
+        <text macro="year-date" suffix="，"/>
       </group>
       
       <choose>
@@ -243,22 +260,26 @@
         </else-if>
         
         <else-if type="bill book graphic legal_case legislation motion_picture report song" match="any">
-            <text macro="title" prefix=" " suffix=", "/>
+        <group suffix=".">
+            <text macro="title" prefix="『" suffix="』"/>
             <text macro="volume"/>
             <text macro="edition"/>
             <text macro="editor" suffix=" "/>
             <text macro="report"/>
             <text macro="publisher"/>
+        </group>
         </else-if>
         
         <else-if type="chapter paper-conference" match="any">
-            <text macro="title" prefix="" suffix=", "/>
-            <text macro="editor" suffix=", "/>
-            <text variable="container-title" font-style="italic" suffix=", "/>
-            <text variable="collection-title" font-style="italic" suffix=", "/>
+        <group suffix=".">
+            <text macro="title" prefix="" suffix=""/>
+            <text macro="editor" suffix=""/>
+            <text variable="container-title" prefix="『" suffix="』"/>
+            <text variable="collection-title" suffix=", "/>
             <text macro="volume"/>
-            <text macro="publisher" suffix=", "/>
+            <text macro="publisher" suffix="，"/>
             <text macro="pages"/>
+        </group>
         </else-if>
         
         <else-if type="speech" match="any">
@@ -276,13 +297,13 @@
         </else-if>
         
         <else>
-          <group suffix=", ">
+          <group suffix="">
             <text macro="title"/>
             <text macro="editor" prefix=" "/>
           </group>
-          <group suffix="." delimiter="">
-            <text variable="container-title" font-style="italic" text-case="title" suffix=", "/>
-            <group delimiter=": ">
+          <group suffix="．" delimiter="">
+            <text variable="container-title" text-case="title"  prefix="『" suffix="』"/>
+            <group delimiter="：">
               <group>
                 <text variable="volume"/>
                 <text variable="issue" prefix="(" suffix=")"/>
