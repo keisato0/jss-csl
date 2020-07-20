@@ -252,7 +252,7 @@
         </else-if>
         
         <else-if type="bill book graphic legal_case legislation motion_picture report song" match="any">
-        <group suffix=".">
+        <group suffix="．">
             <text macro="title" prefix="『" suffix="』"/>
             <text macro="volume"/>
             <text macro="edition"/>
