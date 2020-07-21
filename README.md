@@ -1,7 +1,8 @@
 # Juris-Mで社会学評論
 
-『社会学評論』スタイルガイドに沿った引用・文献一覧の出力を可能にするCSLファイルです。[jss-lewis-sato.csl](https://github.com/keisato0/jss-csl/blob/master/jss-lewis-sato.csl) というのがそれです。
+[jss-lewis-sato.csl](https://github.com/keisato0/jss-csl/blob/master/jss-lewis-sato.csl)
 
+『社会学評論』スタイルガイドに沿った引用・文献一覧の出力を可能にするCSL(正確にはCSL-M)ファイルです。
 
 
 ## はじめに
