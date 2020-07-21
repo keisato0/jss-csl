@@ -14,7 +14,10 @@
 
 - これにより，たとえば日英の文献を日本語論文で並べるとか，英語論文で他言語の文献のローマ字表記を併記するとかいうことが簡単にできるようになります。
 
-- CSLファイルに比べるとCSL-Mファイルはまだあまり公開されていませんが，そのなかの一つに一橋大学の[Jonathan Lewis](https://www.soc.hit-u.ac.jp/teaching_staff/lewis.html)先生が開発された[「日本社会学会(author-date, Japanese)」](https://github.com/Juris-M/jm-styles/blob/master/jm-japan-sociological-society.csl)があります。これはその名の通り日本社会学会の出している[「社会学評論スタイルガイド」](https://jss-sociology.org/bulletin/guide/)に沿った，(たぶん非公式の… 公式に頒布したらいいのに)CSL-Mスタイルファイルです。「日本社会学会」は(驚くべきことに)Juris-Mのデフォルトで入っている数少ないスタイルの一つです。
+- CSLファイルに比べるとCSL-Mファイルはまだあまり公開されていませんが，そのなかの一つに一橋大学の[Jonathan Lewis](https://www.soc.hit-u.ac.jp/teaching_staff/lewis.html)先生が開発された[「日本社会学会(author-date, Japanese)」](https://github.com/Juris-M/jm-styles/blob/master/jm-japan-sociological-society.csl)があります。
+
+  - これはその名の通り日本社会学会の出している[「社会学評論スタイルガイド」](https://jss-sociology.org/bulletin/guide/)に沿った，CSL-Mスタイルファイルです。「日本社会学会」は(驚くべきことに)Juris-Mのデフォルトで入っている数少ないスタイルの一つです。公式に頒布したらいいのに...
+  - このリポジトリには lewis-original.cslという名前で入っています。
 
 - つまり，文献情報がJuris-Mの各フィールドに正しく入力されている限り，
 
