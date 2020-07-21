@@ -2,7 +2,7 @@
 <style xmlns="http://purl.org/net/xbiblio/csl" version="1.1mlz1" class="in-text" default-locale="en-US" page-range-format="chicago">
 
   <info>
-    <title>Juris-Mで社会学評論</title>
+    <title>社会学評論</title>
     <id>https://github.com/keisato0/jss-csl</id>
     <link href="https://github.com/keisato0/jss-csl" rel="self"/>
     <link href="http://www.gakkai.ne.jp/jss/bulletin/guide.php" rel="documentation"/>
@@ -19,7 +19,7 @@
     <category citation-format="author-date"/>
     <category field="sociology"/>
     <summary>A style for citations when writing in Japanese following the Japan Sociological Society's style guide. It is similar to Chicago Author-Date style, and this CSL is based on the Chicago Author-Date CSL.</summary>
-    <updated>2020-07-21T02:00:00+09:00</updated>
+    <updated>2020-07-20T16:00:00+09:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   
